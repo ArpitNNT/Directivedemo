@@ -1,0 +1,51 @@
+<h2>Structural Demo </h2>
+<h3> For Demo </h3>
+
+<ol>
+   <ul *ngFor="let fruit of fruits; index as i">
+       {{i+1}}-{{fruit}}
+   </ul> 
+</ol>
+
+
+<h3>Ng IF  Demo </h3>
+<div *ngIf="disp;then logIn; else logOut">
+    <h2>Check in or LogOut</h2>
+</div>
+<ng-template #logIn>
+    Login Content 
+</ng-template>
+
+<ng-template #logOut>
+    Nothing 
+</ng-template>
+
+<h2>Ng Switch Demo </h2>
+
+<div [ngSwitch]="switch">
+
+    <h2 *ngSwitchCase="1">Kannada </h2>
+    <h2 *ngSwitchCase="2"> English  </h2>
+    <h2 *ngSwitchCase="3">Marathi </h2>
+    <h2 *ngSwitchCase="4">Telgu </h2>
+    <h2 *ngSwitchDefault> Hindi   </h2> 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
